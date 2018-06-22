@@ -1,0 +1,424 @@
+.hero-section
+  background: url('/static/img/general/top-bg.png') no-repeat center
+  background-size: cover;
+  height: auto;
+
+.content-wrap
+  display: flex;
+  flex-direction: column;
+  width: 100%
+
+.content-row
+  display: flex;
+  width: 100%
+  padding: 15px 0
+.contact-link
+  font-size: 20px
+
+.heading-main
+  font-size: rem(36px)
+  text-transform: uppercase;
+  position: relative;
+.content-row--hero
+  padding: 35px 0 0 0
+.hero-text
+  font-size: 36px
+  color:#333333
+.link
+  text-decoration: underline;
+  font-size: 16px
+  font-family: openSansSemi
+  margin-top: 30px
+
+.header-contact-form
+  position: relative;
+  width: 340px
+  height: 340px
+  z-index: 99
+  display: flex;
+  justify-content: center;
+  margin-bottom: 240px;
+  &:before
+    content: ''
+    background: #ffffff
+    opacity: 0.9
+    width: 100%
+    height: 100%
+    position: absolute;
+    z-index: -1
+    border-radius: 10px
+    box-shadow: 0px 1px 13.05px 1.95px rgba(0, 0, 0, 0.23);
+.input-row--request-price
+  margin-bottom: 18px;
+
+.input-row--request-price
+  &:last-child
+    margin-bottom: 0
+.request-price
+  padding: 35px 0
+.request-price-field
+  width: 275px
+  height: 50px
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(0, 0, 0);
+  line-height: 2.857;
+  z-index: 570;
+  border-width: 1px;
+  border-color: rgb(186, 186, 186);
+  border-style: solid;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 40px
+
+
+
+.separator
+  height:2px;
+  width: 100%
+  opacity: 0.302;
+  position: absolute
+  background-color: #a1a8bb
+  left: 0
+  top: 145px
+
+.ultramodern-houses
+  background-image: url('/static/img/general/decor-bg-1.png')
+
+.separator-heading
+  position: absolute;
+  bottom: -50%
+  left: 0
+  width: 465px
+  height: 1px
+  background-image: url('/static/img/general/heading-decor.png')
+  background-position: center;
+  background-repeat: no-repeat;
+.heading-ultramodern-houses
+  margin-top: 75px
+  margin-bottom: 90px
+
+.house-advantage
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 33.3%;
+  margin-bottom: 60px
+.img-background
+  width: 275px
+  height: 275px
+  border-radius: 50%
+  background-image: url('/static/img/general/ad-decor.png')
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.house-advantage-img
+  border-radius: 50%
+  width: 225px
+  height: 225px
+
+.house-advantage-heading
+  text-transform: uppercase;
+  font-size: 24px
+  font-family: openSansBold
+  margin: 25px 0
+
+.house-advantage-descr-text
+  text-align: center;
+  width: 80%
+  line-height: 1.5;
+  font-size: 16px
+
+.separator-heading--house-type
+  left: -50%
+
+.content-row--house-type
+  flex-flow: wrap;
+
+.houses-types
+  background: url('/static/img/general/decor-bg-6.png') no-repeat center
+  background-size: cover;
+
+.house
+  width: 100%
+  display: flex;
+  margin-bottom: 25px
+  height: 374px
+.house-left-side,
+.house-right-side
+  width: 50%
+
+.house-left-side
+  border-top-left-radius: 15px
+  border-bottom-left-radius: 15px
+
+.house-right-side
+  border-top-right-radius: 15px
+  border-bottom-right-radius: 15px
+  background-image: url('/static/img/general/sp-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 99
+  align-items: center;
+  padding: 40px 0
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute;
+    left: 0
+    top: 0
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8
+    z-index: -1
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+
+.reverse-side--left
+  border-top-left-radius: 15px
+  border-bottom-left-radius: 15px
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute;
+    left: 0
+    top: 0
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8
+    z-index: -1
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+    border-top-right-radius: 0px
+    border-bottom-right-radius: 0px
+.reverse-side--right
+  border-top-right-radius: 15px
+  border-bottom-right-radius: 15px
+  border-top-left-radius: 0px
+  border-bottom-left-radius: 0px
+
+.house-heading-row
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.house-desc-wrap
+  width: 50%
+  margin-top: 50px
+  z-index: 999
+.house-type-heading
+  color: goldenColor
+  z-index: 99
+  font-size: 24px
+  font-family: openSansSemi
+  text-transform: uppercase;
+  position: relative;
+  &:after
+    content: ''
+    width: 80%
+    height: 1px
+    opacity: 0.65
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 10%
+    z-index: 99
+    bottom: -15px
+
+.house-desc-row
+  color: #ffffff
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+.text-house-desc
+  font-size: 18px
+
+.text-house-desc--number
+  font-size: 24px
+  font-family: openSansSemi
+
+.get-present
+  width: 100%
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99
+  position: relative;
+  margin-bottom: 90px
+  margin-top: 20px
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    background: #ffffff
+    opacity: 0.65
+    position: absolute;
+    z-index: -1
+
+.content-row--present
+  justify-content: space-between;
+
+.house-present
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+.img-background--present
+  background: url('/static/img/general/pres-decor.png') no-repeat center
+  background-size: cover;
+  height: 292px
+  width: 292px
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+.house-present-img
+  border-radius: 50%
+  width: 242px
+  height: 242px
+
+.house-present-heading
+  font-size: 30px
+  font-family: openSansBold
+  margin: 50px 0
+  text-transform: capitalize;
+
+.img-background--present-decoration
+  position: absolute;
+  background: url('/static/img/general/butterfly.png') no-repeat center
+  display:flex;
+  width: 100%
+  height: 95px
+  bottom: -25px
+
+.bold-text
+  font-size: 48px
+  font-family: openSansBold
+
+.heading-present
+  font-family: openSansBold
+  text-transform: none;
+  margin-right: 8px
+
+.our-clients
+  background: url('/static/img/general/decor-bg-4.png') no-repeat center
+  background-size: cover;
+.heading-clients
+  color: whiteColor
+  margin: 85px 0
+.client-card
+  height: 440px
+  flex-basis: 29%
+  border-radius: 15px
+  margin-bottom: 90px
+.client-descr
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px
+  padding: 0 20px
+  &:before
+    content: ''
+    position: absolute;
+    width: 100%
+    height: 100%
+    z-index: auto;
+    background-color: rgb(221, 221, 221);
+    opacity: 0.251;
+    left: 0
+    top: 0
+    border-bottom-left-radius: 15px
+    border-bottom-right-radius 15px
+
+.client-descr-text
+  color: whiteColor
+  margin-left: 5px
+  line-height: 1.5
+.color-text
+  color: goldenColor
+  line-height: 1.5
+
+.help-area
+  background: url('/static/img/general/decor-bg-5.png') no-repeat center
+  background-size: cover;
+  position: relative;
+  height: auto;
+  &:before
+    content: ''
+    position: absolute;
+    width: 100%
+    height: 100%
+    background-color: rgb(255, 255, 255);
+    opacity: 0.75
+    z-index: 0
+
+
+.heading--help-area
+  margin-top: 90px
+  font-family: openSansSemi
+
+.separator-heading--help-area
+  left: -15%
+
+.content-row--help
+  z-index: 99
+  position: relative;
+  border-radius: 15px
+  background: url('/static/img/general/help-decor.png') no-repeat center
+  background-size: cover;
+  padding:  60px
+  align-items: flex-end;
+  margin-top: 110px
+  margin-bottom: 130px
+.help-info
+  display: flex;
+  flex-direction: column;
+  width: 50%
+
+.img-help-area
+  border-radius: 50%
+
+.image-help
+  position: absolute;
+  left: -10%
+  top: -8%
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 494px
+  height: 494px
+.help-heading
+  font-size: 30px
+  font-family: openSansSemi
+  line-height: 1.333;
+  color: rgb(37, 39, 40);
+  margin-bottom: 30px
+
+.help-text
+  color: rgb(37, 39, 40);
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 50px
+
+
+.project-manager
+  background: url('/static/img/general/aluminium.png') no-repeat center
+  background-size: cover;
+  position: relative;
+  height: auto;
+  &:before
+    content: ''
+    position: absolute;
+    width: 100%
+    height: 100%
+    background-color: rgb(255, 255, 255);
+    opacity: 0.75
+    z-index: 0
+    background-image: linear-gradient( 45deg, rgb(35,35,35) 0%, rgb(54,54,54) 100%);
