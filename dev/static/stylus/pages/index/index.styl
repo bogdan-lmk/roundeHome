@@ -19,11 +19,32 @@
   font-size: rem(36px)
   text-transform: uppercase;
   position: relative;
+  margin-top: 90px
+
+.heading-hero
+  margin-top: 0
+
 .content-row--hero
   padding: 35px 0 0 0
 .hero-text
   font-size: 36px
   color:#333333
+
+.link-wrap
+  display: flex;
+  align-items: center;
+
+.contact-link
+  margin-right: 30px
+
+.contact-link
+  &:last-child
+    margin-right: 0
+
+.contact-icon-hero
+  width: 20px
+  height: 20px
+  margin-right: 10px
 .link
   text-decoration: underline;
   font-size: 16px
@@ -38,6 +59,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 240px;
+  padding: 20px
   &:before
     content: ''
     background: #ffffff
@@ -48,8 +70,34 @@
     z-index: -1
     border-radius: 10px
     box-shadow: 0px 1px 13.05px 1.95px rgba(0, 0, 0, 0.23);
+
 .input-row--request-price
   margin-bottom: 18px;
+  position: relative;
+
+.contact-icon-input
+  width: 14px
+  height: 14px
+  position: absolute;
+  left: 15px
+  top: 50%
+  transform: translateY(-50%);
+
+
+.request-price-field
+  transition: 0.2s ease-in-out
+  &:focus
+    border: 1px solid  #e0933d
+    background-color: #d6d6d7
+  &:hover
+    transition: 0.2s ease-in-out
+    border: 1px solid  #e0933d
+    background-color: #d6d6d7
+
+.request-price-field::-webkit-input-placeholder{
+  color: #222222
+  font-size: 14px
+}
 
 .input-row--request-price
   &:last-child
@@ -91,9 +139,7 @@
   left: 0
   width: 465px
   height: 1px
-  background-image: url('/static/img/general/heading-decor.png')
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(to right, rgba(178,142,103,0) 0%,rgba(176,140,102,0) 1%,rgba(78,57,44,1) 50%,rgba(178,142,103,0) 100%);
 .heading-ultramodern-houses
   margin-top: 75px
   margin-bottom: 90px
@@ -203,6 +249,31 @@
   border-top-left-radius: 0px
   border-bottom-left-radius: 0px
 
+
+.circle-house
+  background: url('/static/img/general/decor-bg-2.png') no-repeat center;
+  background-size: cover;
+  height: auto;
+  padding-bottom: 40px
+
+.content-row--circle
+  margin-bottom: 50px
+  padding: 0
+
+.circle-heading
+  font-size: 18px;
+  color: rgb(240, 193, 99)
+  font-family: openSansSemi
+  line-height: 1.667;
+  margin-bottom: 20px
+  text-transform: uppercase;
+.circle-info-block
+  width: 23%
+
+
+
+.circle-text
+  color: whiteColor
 .house-heading-row
   display: flex;
   justify-content: center;
@@ -371,7 +442,7 @@
   z-index: 99
   position: relative;
   border-radius: 15px
-  background: url('/static/img/general/help-decor.png') no-repeat center
+  background: url('/static/img/general/help-decor.png') no-repeat
   background-size: cover;
   padding:  60px
   align-items: flex-end;
@@ -422,3 +493,167 @@
     opacity: 0.75
     z-index: 0
     background-image: linear-gradient( 45deg, rgb(35,35,35) 0%, rgb(54,54,54) 100%);
+
+
+.image-help--project
+  right: 5%
+  top: -10%
+  left: unset
+
+
+.content-row--project
+  z-index: 9999
+  position: relative;
+  border-radius: 15px
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.1)
+  padding: 30px 60px
+  margin-top: 110px
+  margin-bottom: 130px
+  height: auto;
+  background: url('/static/img/general/help-decor-1.png') no-repeat
+  background-position-y 100%
+.project-m-info
+  width: 45%
+
+
+.heading--project-manager,
+.project-m-heading,
+.project-m-text
+  color: whiteColor
+
+.heading--project-manager
+  width: 50%
+  text-align: center;
+  line-height: 1.667;
+  margin-top: 90px
+
+.project-m-heading
+  font-size: 30px
+  font-family: openSansSemi
+  line-height: 1.333
+  margin-bottom: 30px
+
+.project-m-text
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 30px
+
+.contacts
+  background: url('/static/img/general/footer-bg.png') no-repeat center
+  padding-bottom: 90px
+.separator-heading--contact
+  left: -100%
+
+
+.contact-side
+  width: 35%
+
+.cart-side
+  width: 55%
+
+
+.contact-heading-row
+  display: flex;
+  align-items: center;
+
+.contact-info-row
+  display: flex;
+  justify-content: space-between;
+
+.contact-name
+  font-size: 24px;
+  color: rgb(37, 39, 40);
+  text-transform: uppercase;
+  line-height: 2.5;
+  font-family: openSansReg
+
+.contact-link--contacts
+  font-size: 18px;
+  color: rgb(37, 39, 40);
+  line-height: 2;
+  font-family: openSansBold
+
+.contact-icon
+  width: 28px
+  height: 28px
+  margin-right: 25px
+
+.separator-orange
+  width: 100%
+  background: linear-gradient(to right, rgba(178,142,103,0) 0%,rgba(180,143,103,0) 1%,rgba(255,205,98,1) 50%,rgba(178,142,103,0) 100%);
+  bottom: -15%
+
+
+
+
+.contact-form
+  flex-direction: column;
+  align-items: center;
+
+.contact-form-popup
+  width: 554px
+  height: auto;
+  border-radius: 15px
+  background-color: whiteColor
+  display: none;
+
+
+.contact-form-popup--active {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+
+.contact-row-content
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: whiteColor
+  border-radius: 15px
+.contact-form-top
+  display: flex;
+  flex-direction: column;
+  width: 65%
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px
+
+.form-icon-close
+  width: 28px
+  height: 28px
+  position: absolute;
+  right: 15px
+  top: 15px
+  cursor: pointer;
+
+
+.contact-form-heading
+  font-size: 30px;
+  color: rgb(26, 26, 26);
+  line-height: 1.333;
+  font-family: openSansSemi
+  margin-bottom: 10px
+
+.field-enter-message
+  height: 95px
+  padding: 20px
+  line-height: 1
+  transition: 0.2s ease-in-out
+  &:focus
+    border: 1px solid  #e0933d!important
+    background-color: #d6d6d7
+  &:hover
+    transition: 0.2s ease-in-out
+    border: 1px solid  #e0933d
+    background-color: #d6d6d7

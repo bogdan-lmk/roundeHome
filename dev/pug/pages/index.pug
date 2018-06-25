@@ -14,23 +14,29 @@ block content
 						a(href="/").logo-link
 							img.logo-img(src="/static/img/general/logo-head.png")
 					.link-wrap
+						+icon('contact-mail', 'contact-icon-hero')
 						a(href="/").contact-link pro@davinchidom.ru
+						+icon('contact-phone', 'contact-icon-hero')
 						a(href="/").contact-link +7 (905) 502-03-71
 					.separator
 				.content-row.content-row--hero.jc-between
 					.content-text.column
-						h2.heading-main Ультрасовременные
+						h2.heading-main.heading-hero Ультрасовременные
 						p.text.hero-text дома в виде сферы 
 						p.text.hero-text “да винчи”
 						a(href="/").link Подробнее
 					.contact-form.header-contact-form
 						form.request-price
 							.input-row.input-row--request-price
+								+icon('user', 'contact-icon-input')
 								input(placeholder="Имя..").request-price-field.field-enter-name
 							.input-row.input-row--request-price
-								input(placeholder="Имя..").request-price-field.field-enter-email
+								+icon('contact-mail', 'contact-icon-input')
+								input(placeholder="Почта...").request-price-field.field-enter-email
 							.input-row.input-row--request-price
-								input(placeholder="Имя..").request-price-field.field-enter-phone
+								+icon('contact-phone', 'contact-icon-input')
+								input(placeholder="Телефон...").request-price-field.field-enter-phone
+							.input-row.input-row--request-price
 								a.btn.btn-request-price запросить стоимость
 	section.ultramodern-houses
 		.container
@@ -54,6 +60,40 @@ block content
 							img(src="/static/img/general/h-2.jpg").house-advantage-img
 						h2.house-advantage-heading теплый дом
 						p.text.house-advantage-descr-text наша технология позволяет делать самые теплые дома. толщина утеплителя может достигать 50см!!!мы используем экологичные утеплители Paroc или натуральный лен
+	section.circle-house
+		.img-background--circle
+			.img-background--circle
+				img(src="/static/img/general/foto-2.png")
+		.container
+			.content-wrap
+				.content-row.content-row--circle.jc-center
+					h2.heading-main.heading--project-manager круглый дом “da vinci”
+						.separator-heading.separator-orange
+				.content-row.content-row--circle.jc-between
+					.circle-info-block
+						h2.circle-heading Это настоящий дом для жизни
+						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+					.circle-info-block
+						h2.circle-heading Это настоящий дом для жизни
+						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+				.content-row.content-row--circle.jc-between
+					.circle-info-block
+						h2.circle-heading Это настоящий дом для жизни
+						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+					.circle-info-block
+						h2.circle-heading Это настоящий дом для жизни
+						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus 	 
+				.content-row.content-row--circle.jc-between
+					.circle-info-block
+						h2.circle-heading Это настоящий дом для жизни
+						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+					.circle-info-block
+						h2.circle-heading Это настоящий дом для жизни
+						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus 	 
+				.content-row.content-row--circle.jc-center
+					.circle-info-block
+						h2.circle-heading Это настоящий дом для жизни
+						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 	section.houses-types
 		.container
 			.content-wrap
@@ -210,11 +250,91 @@ block content
 			.content-wrap
 				.content-row.jc-center
 					h2.heading-main.heading--project-manager Один руководитель проекта на весь цикл стройки
-						.separator-heading.separator-heading--project-manager
-				.content-row.content-row--help.column
-					.image-project-m
-						img(src="/static/img/general/project-m-img.png").img-project-manager
+						.separator-heading.separator-orange
+				.content-row.content-row--project.column
+					.image-help.image-help--project
+						img(src="/static/img/general/help-img-2.png").img-help-area
 					.project-m-info
-						h2.project-m-heading Можем помочь с выбором участка
-						p.text.project-m-text и реализовать возможности существующего участка в ком плане для строительство гостиницы / базы отдыха, постройки поселка домов в виде сфер
-						.btn.btn-request-price.btn-help помочь с выбором участка
+						h2.project-m-heading Строительство дома это важный этап в жизни
+						p.text.project-m-text и мы понимаем, что наши клиенты могут быть профессионалами в своих областях, но совершенно не обязаны разбираться в том, какой септик лучше установить или подключить тип отопления, поэтому на каждый проект мы назначаем ответственного руководителя, который лично заинтересован, чтобы сделать всё как надо
+						a.btn.btn-request-price.btn-project помочь со строительством
+	section.contacts
+		.container
+			.content-wrap
+				.content-row.jc-center
+					.contact-heading-row
+						h2.heading-main контакты
+							.separator-heading.separator-heading--contact
+				.content-row
+					.contact-side
+						.contact-row
+							.contact-heading-row
+								+icon('contact-phone', 'contact-icon')
+								h2.contact-name телефон:
+							.contact-info-row
+								a.contact-link--contacts +7 (905) 502-03-71
+								a.contact-link--contacts +7 (905) 502-03-71
+						.contact-row
+							.contact-heading-row
+								+icon('contact-marker', 'contact-icon')
+								h2.contact-name адрес
+							.contact-info-row.column
+								a.contact-link--contacts Москва, Нагорный проезд.д. 7; 
+								a.contact-link--contacts ООО “Идеи Да Винчи”
+						.contact-row
+							.contact-heading-row
+								+icon('contact-mail', 'contact-icon')
+								h2.contact-name почта:
+							.contact-info-row
+								a.contact-link--contacts pro@davinchidom.ru
+					.cart-side
+	.contact-form.contact-form--recall.contact-form-popup
+		.contact-row-content
+			+icon('close-icon', 'form-icon-close')
+			.contact-form-top
+				h2.contact-form-heading перезвоните мне
+				p.contact-form-text наш руководитель проектов  перезвонит Вам в течении дня
+			form.request-price
+				.input-row.input-row--request-price
+					+icon('user', 'contact-icon-input')
+					input(placeholder="Имя..").request-price-field.field-enter-name
+				.input-row.input-row--request-price
+					+icon('contact-phone', 'contact-icon-input')
+					input(placeholder="Телефон...").request-price-field.field-enter-phone
+				.input-row.input-row--request-price
+					button.btn.btn-request-price Отправить
+	.contact-form.contact-form--help-area.contact-form-popup
+		.contact-row-content
+			+icon('close-icon', 'form-icon-close')
+			.contact-form-top
+				h2.contact-form-heading Помощь с участком
+				p.contact-form-text наш руководитель проектов  перезвонит Вам в течении дня
+			form.request-price
+				.input-row.input-row--request-price
+					+icon('user', 'contact-icon-input')
+					input(placeholder="Имя..").request-price-field.field-enter-name
+				.input-row.input-row--request-price
+					+icon('contact-mail', 'contact-icon-input')
+					input(placeholder="Почта...").request-price-field.field-enter-email
+				.input-row.input-row--request-price
+					+icon('contact-phone', 'contact-icon-input')
+					input(placeholder="Телефон...").request-price-field.field-enter-phone
+				.input-row.input-row--request-price
+					textarea(type="textarea" placeholder="напишите сообщение...").request-price-field.field-enter-message
+				.input-row.input-row--request-price
+					button.btn.btn-request-price Отправить
+	.contact-form.contact-form--help-build.contact-form-popup
+		.contact-row-content
+			+icon('close-icon', 'form-icon-close')
+			.contact-form-top
+				h2.contact-form-heading Помощь со строительством
+				p.contact-form-text наш руководитель проектов  перезвонит Вам в течении дня
+			form.request-price
+				.input-row.input-row--request-price
+					+icon('user', 'contact-icon-input')
+					input(placeholder="Имя..").request-price-field.field-enter-name
+				.input-row.input-row--request-price
+					+icon('contact-phone', 'contact-icon-input')
+					input(placeholder="Телефон...").request-price-field.field-enter-phone
+				.input-row.input-row--request-price
+					button.btn.btn-request-price Отправить							

@@ -38,7 +38,8 @@ video
 textarea
 	resize none
 
-section
+section,
+footer
 	position relative
 	display: flex;
 	flex-direction: column;
@@ -51,6 +52,8 @@ button
 img
 	max-width 100%
 
+button
+  border: none
 *, *:before, *:after
 	box-sizing border-box
 
@@ -78,9 +81,13 @@ img
 
 .align-items-baseline
 	align-items: baseline;
-	
+
 .row-reverse
 	flex-direction: row-reverse;
+
+.overflow-hidden
+	overflow: hidden;
+
 //Модули
 @import "modules/modules.styl"
 
