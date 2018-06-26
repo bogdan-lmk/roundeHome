@@ -1,12 +1,22 @@
 header.header
-  .container.jc-between
+  .container.jc-between.align-items-center
+    .logo
+      a(href="/").logo-link
+        img.logo-img(src="/static/img/general/logo-head.png")
     nav.navigation.header-navigation
       li.nav-li.header-nav-li
-        a(href='/').nav-link.header-nav-link Новинка!!! Вау-эффект
+        a(href='javascript:void').nav-link.header-nav-link.header-nav-link--new Новинка!!! Вау-эффект
       li.nav-li.header-nav-li
-        a(href='/').nav-link.header-nav-link ваш дом сфера 
+        a(href='javascript:void').nav-link.header-nav-link.header-nav-link--houses ваш дом сфера 
       li.nav-li.header-nav-li
-        a(href='/').nav-link.header-nav-link  Виды домов
+        a(href='javascript:void').nav-link.header-nav-link.header-nav-link--types  Виды домов
       li.nav-li.header-nav-li
-        a(href='/').nav-link.header-nav-link  Контакты 
-    a.btn.btn-header.btn-call  перезвоните мне
+        a(href='javascript:void').nav-link.header-nav-link.header-nav-link--contact  Контакты 
+    //- a.btn.btn-header.btn-call  перезвоните мне
+    .link-wrap.column
+      .link-row  
+        +icon('contact-call-header', 'contact-icon-hero')
+        a(href="/").contact-link +7 (905) 502-03-71
+      .link-row
+        +icon('contact-mail-header', 'contact-icon-hero')
+        a(href="/").contact-link pro@davinchidom.ru

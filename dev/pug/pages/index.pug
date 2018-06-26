@@ -10,15 +10,15 @@ block content
 		.container
 			.content-wrap
 				.content-row.jc-between
-					.logo
-						a(href="/").logo-link
-							img.logo-img(src="/static/img/general/logo-head.png")
-					.link-wrap
-						+icon('contact-mail', 'contact-icon-hero')
-						a(href="/").contact-link pro@davinchidom.ru
-						+icon('contact-phone', 'contact-icon-hero')
-						a(href="/").contact-link +7 (905) 502-03-71
-					.separator
+					//- .logo
+					//- 	a(href="/").logo-link
+					//- 		img.logo-img(src="/static/img/general/logo-head.png")
+					//- .link-wrap
+					//- 	+icon('contact-mail', 'contact-icon-hero')
+					//- 	a(href="/").contact-link pro@davinchidom.ru
+					//- 	+icon('contact-phone', 'contact-icon-hero')
+					//- 	a(href="/").contact-link +7 (905) 502-03-71
+					//- .separator
 				.content-row.content-row--hero.jc-between
 					.content-text.column
 						h2.heading-main.heading-hero Ультрасовременные
@@ -47,23 +47,20 @@ block content
 				.content-row.jc-between
 					.house-advantage
 						.img-background
-							img(src="/static/img/general/h-2.jpg").house-advantage-img
+							img(src="/static/img/general/modern-h1.png").house-advantage-img
 						h2.house-advantage-heading крепкий каркас
 						p.text.house-advantage-descr-text мы делаем самые прочные дома в россии, уникальная система, толщина стенок из фанеры от 30 до 50 см
 					.house-advantage
 						.img-background
-							img(src="/static/img/general/h-2.jpg").house-advantage-img
+							img(src="/static/img/general/modern-h2.png").house-advantage-img
 						h2.house-advantage-heading идеальная форма
 						p.text.house-advantage-descr-text наша сфера не приплюснута как все остальные на рынке.мы не строим оптические иллюзии на сайте, выдавая желаемое за действительное.мы её действительно подняли в своих проектах, чтобы она напоминала сферу, а не полусферу
 					.house-advantage
 						.img-background
-							img(src="/static/img/general/h-2.jpg").house-advantage-img
+							img(src="/static/img/general/modern-h3.png").house-advantage-img
 						h2.house-advantage-heading теплый дом
 						p.text.house-advantage-descr-text наша технология позволяет делать самые теплые дома. толщина утеплителя может достигать 50см!!!мы используем экологичные утеплители Paroc или натуральный лен
 	section.circle-house
-		.img-background--circle
-			.img-background--circle
-				img(src="/static/img/general/foto-2.png")
 		.container
 			.content-wrap
 				.content-row.content-row--circle.jc-center
@@ -74,25 +71,25 @@ block content
 						h2.circle-heading Это настоящий дом для жизни
 						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 					.circle-info-block
-						h2.circle-heading Это настоящий дом для жизни
+						h2.circle-heading вау - дизайн
 						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 				.content-row.content-row--circle.jc-between
 					.circle-info-block
-						h2.circle-heading Это настоящий дом для жизни
+						h2.circle-heading 2-ой свет и ощущение огромного пространстваи
 						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 					.circle-info-block
-						h2.circle-heading Это настоящий дом для жизни
+						h2.circle-heading Разумный выбор материалов
 						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus 	 
 				.content-row.content-row--circle.jc-between
 					.circle-info-block
-						h2.circle-heading Это настоящий дом для жизни
+						h2.circle-heading Крепкий и надежный
 						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 					.circle-info-block
-						h2.circle-heading Это настоящий дом для жизни
+						h2.circle-heading монтаж без крана
 						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus 	 
 				.content-row.content-row--circle.jc-center
 					.circle-info-block
-						h2.circle-heading Это настоящий дом для жизни
+						h2.circle-heading Золотое сечение да Винчи
 						p.circle-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
 	section.houses-types
 		.container
@@ -103,7 +100,7 @@ block content
 				.content-row.content-row--house-type
 					.house
 						.house-left-side
-							img(src="/static/img/general/sfera-left-side.png")
+							img(src="/static/img/general/h-1.jpg")
 						.house-right-side.column
 							.house-heading-row
 								h3.house-type-heading дом 6 метров
@@ -137,7 +134,7 @@ block content
 								a.btn.btn-request-price запросить цену
 					.house
 						.house-left-side
-							img(src="/static/img/general/sfera-left-side.png")
+							img(src="/static/img/general/h-3.jpg")
 						.house-right-side.column
 							.house-heading-row
 								h3.house-type-heading дом 6 метров
@@ -153,9 +150,9 @@ block content
 									span.text-house-desc--number 5 м
 								a.btn.btn-request-price запросить цену
 					.house.row-reverse
-						.house-left-side
-							img(src="/static/img/general/sfera-left-side.png")
-						.house-right-side.column
+						.house-left-side.reverse-side--right
+							img(src="/static/img/general/h-4.png")
+						.house-right-side.column.reverse-side--left
 							.house-heading-row
 								h3.house-type-heading дом 6 метров
 							.house-desc-wrap.column
@@ -171,7 +168,7 @@ block content
 								a.btn.btn-request-price запросить цену			
 					.house
 						.house-left-side
-							img(src="/static/img/general/sfera-left-side.png")
+							img(src="/static/img/general/h-5.jpg")
 						.house-right-side.column
 							.house-heading-row
 								h3.house-type-heading дом 6 метров
@@ -210,10 +207,10 @@ block content
 	section.our-clients
 		.container
 			.content-wrap
-				.content-row.jc-center
+				.content-row.content-row--our-clients.jc-center
 					h2.heading-main.heading-clients наши клиенты
-						.separator-heading
-				.content-row.jc-between
+						.separator-heading.separator-orange
+				.content-row.content-row--our-clients.jc-between
 					.client-card
 						.img-clients-card
 							img(src="/static/img/general/client-photo.png").client-img
@@ -222,13 +219,13 @@ block content
 								span.text.client-descr-text люди с нестандартным типом мышления
 					.client-card
 						.img-clients-card
-							img(src="/static/img/general/client-photo.png").client-img
+							img(src="/static/img/general/client-photo3.png").client-img
 						.client-descr
 							p.color-text Cтремятся к развитию,
 								span.text.client-descr-text не бояться привлечь к себе внимание всей округи и готовые завести новыеинтересные знакомства
 					.client-card
 						.img-clients-card
-							img(src="/static/img/general/client-photo.png").client-img
+							img(src="/static/img/general/client-photo2.png").client-img
 						.client-descr
 							p.color-text Cтремятся к развитию,
 								span.text.client-descr-text не бояться привлечь к себе внимание всей округи и готовые завести новыеинтересные знакомства
@@ -252,7 +249,7 @@ block content
 					h2.heading-main.heading--project-manager Один руководитель проекта на весь цикл стройки
 						.separator-heading.separator-orange
 				.content-row.content-row--project.column
-					.image-help.image-help--project
+					.image-help--project
 						img(src="/static/img/general/help-img-2.png").img-help-area
 					.project-m-info
 						h2.project-m-heading Строительство дома это важный этап в жизни
@@ -263,9 +260,9 @@ block content
 			.content-wrap
 				.content-row.jc-center
 					.contact-heading-row
-						h2.heading-main контакты
+						h2.heading-main.heading-main--contact контакты
 							.separator-heading.separator-heading--contact
-				.content-row
+				.content-row.jc-between
 					.contact-side
 						.contact-row
 							.contact-heading-row
@@ -288,6 +285,7 @@ block content
 							.contact-info-row
 								a.contact-link--contacts pro@davinchidom.ru
 					.cart-side
+						.map-container#map
 	.contact-form.contact-form--recall.contact-form-popup
 		.contact-row-content
 			+icon('close-icon', 'form-icon-close')
